@@ -189,14 +189,16 @@
       "isActive": false,
       "description": "Sistema E-Commerce en Java y MySQL para una librería",
       "highlights": ["Trabajo en Equipo", "Aplicación del Framework Scrum"],
-      "url": "#"
+      "url": "#",
+      "github": null
     },
     {
       "name": "Base de Datos para una Todo List - Universidad",
       "isActive": false,
       "description": "Lógica de la Base de Datos y Operaciones CRUD para una Todo List",
       "highlights": ["Trabajo en Equipo", "Backend"],
-      "url": "#"
+      "url": "#",
+      "github": null
     },
     {
       "name": "Desarollo de APIs - Universidad",
@@ -208,7 +210,8 @@
         "Bases de Datos",
         "APIs"
       ],
-      "url": "#"
+      "url": "#",
+      "github": null
     }
   ]
 }
