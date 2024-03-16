@@ -1,21 +1,28 @@
 ---
-import Section from "../Section.astro"
-import HTML from "@/icons/html.astro"
+import { skills } from "@cv"
 import CSS from "@/icons/css.astro"
-import JavaScript from "@/icons/javascript.astro"
-import TypeScript from "@/icons/type.astro"
-import React from "@/icons/react.astro"
-import Node from "@/icons/node.astro"
-import MySQL from "@/icons/sql.astro"
+import Flutter from "@/icons/flutter.astro"
 import Git from "@/icons/git.astro"
 import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/tailwind.astro"
+import HTML from "@/icons/html.astro"
+import JavaScript from "@/icons/javascript.astro"
+import Kotlin from "@/icons/kotlin.astro"
+import MySQL from "@/icons/sql.astro"
 import Next from "@/icons/next.astro"
-import { skills } from "@cv"
+import Node from "@/icons/node.astro"
+import React from "@/icons/react.astro"
+import Section from "../Section.astro"
 import Swift from "@/icons/swift.astro"
 import SwiftUI from "@/icons/swiftui.astro"
-import Kotlin from "@/icons/kotlin.astro"
-import Flutter from "@/icons/flutter.astro"
+import Tailwind from "@/icons/tailwind.astro"
+import TypeScript from "@/icons/type.astro"
+import Java from "@/icons/java.astro"
+import AstroBrand from "@/icons/brand-astro.astro"
+import MongoDB from "@/icons/mongodb.astro"
+import CSharp from "@/icons/csharp.astro"
+import GitLab from "@/icons/gitlab.astro"
+import Linux from "@/icons/ubuntu.astro"
+import Python from "@/icons/python.astro"
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -33,6 +40,13 @@ const SKILLS_ICONS: Record<string, any> = {
   SwiftUI,
   Kotlin,
   Flutter,
+  Java,
+  AstroBrand,
+  MongoDB,
+  CSharp,
+  GitLab,
+  Linux,
+  Python
 }
 ---
 
@@ -40,7 +54,7 @@ const SKILLS_ICONS: Record<string, any> = {
   <ul>
     {
       skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
+        const iconName = name === "Next.js" ? "Next" : (name === "C#" ? "CSharp" : (name === "Astro" ? "AstroBrand" : name));
         const Icon = SKILLS_ICONS[iconName]
 
         return (
